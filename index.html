@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora & Team Web</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        font-family: 'Montserrat', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #000000; /* sfondo nero */
+        color: #fff; /* testo bianco per leggibilità */
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #fff;
+        margin-bottom: 20px;
+        transition: transform 0.3s;
+    }
+    .profile-pic:hover {
+        transform: scale(1.05);
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    p.description {
+        font-size: 1em;
+        max-width: 400px;
+        margin: 0 auto 30px auto;
+        color: #ddd;
+    }
+
+    .contact-icons {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    .contact-icons img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+    .contact-icons img:hover {
+        transform: scale(1.2);
+    }
+
+    form {
+        background: rgba(255,255,255,0.1);
+        padding: 25px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        max-width: 400px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: none;
+        font-size: 1em;
+    }
+
+    input[type="submit"] {
+        background-color: #fff;
+        color: #4a90e2;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    input[type="submit"]:hover {
+        transform: translateY(-2px);
+        background-color: #ddd;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 0.8em;
+        color: #ccc;
+    }
+
+</style>
+</head>
+<body>
+
+    <!-- FOTO E NOME -->
+    <img src="https://i.postimg.cc/1zt1C5rM/Whats-App-Image-2025-12-12-at-15-43-28.jpg" alt="Aurora" class="profile-pic">
+    <h1>Aurora</h1>
+
+    <!-- DESCRIZIONE -->
+    <p class="description">
+        Hi, I'm Aurora, I'm 23 years old. I work with a web development team and we're looking for people interested in creating a new website or improving an existing one. If you'd like, leave us your details and we'll get in touch!
+    </p>
+
+    <!-- ICON LINKS -->
+    <div class="contact-icons">
+        <a href="https://discord.com/users/688969095252672591" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord">
+        </a>
+        <a href="https://www.instagram.com/call.me_socialauro" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+        </a>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form action="https://formspree.io/f/mvgedrra" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="4" placeholder="What do you want to build or improve?"></textarea>
+        <input type="submit" value="Send">
+    </form>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Aurora & Team Web Development
+    </footer>
+
+</body>
+</html>
