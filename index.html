@@ -52,14 +52,15 @@
         margin-bottom: 40px;
     }
     .contact-icons img {
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        transition: transform 0.3s;
-    }
-    .contact-icons img:hover {
-        transform: scale(1.2);
-    }
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    filter: brightness(0) invert(1); /* trasforma icone in bianco */
+   }
+   .contact-icons img:hover {
+    transform: scale(1.2);
+   }
 
     form {
         background: rgba(255,255,255,0.1);
@@ -136,3 +137,4 @@
 
 </body>
 </html>
+
